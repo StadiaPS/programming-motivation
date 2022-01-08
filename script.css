@@ -1,0 +1,146 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #eee;
+	overflow-x: hidden;
+}
+
+h1.dont-think {
+	font-size: 15px;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #eee;
+	padding: 3px 15px;
+	background-color: #333;
+}
+
+div {
+	margin-top: 30px;
+	background-size: cover;
+	background-position: center;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	margin: auto;
+	margin-top: -50px;
+}
+
+h3, a, p {
+	position: relative;
+	left: 0;
+	bottom: -10%;
+	width: fit-content;
+	background-color: #fff;
+	padding: 3px 15px;
+	margin: 0;
+}
+
+h3, p {
+	color: #000;
+}
+
+div h1 {
+	position: absolute;
+	font-size: 35px;
+	bottom: 0;
+	width: 150%;
+	left: 50%;
+	color: #eee;
+}
+
+div:nth-child(3) h1 {
+	width: 200%;
+	transform: translate(-50%, 0);
+}
+
+div:nth-child(1) {
+	background-image: url(icon/mouse.png);
+	margin-top: 50px;
+}
+
+div:nth-child(2) {
+	background-image: url(icon/oldConsole3.png);
+}
+
+div:nth-child(3) {
+	background-image: url(icon/pc.png);
+}
+
+div:nth-child(4) {
+	background-image: url(icon/futurePeople.png);
+}
+
+div:nth-child(5) {
+	background-image: url(icon/treasure.png);
+}
+
+
+/* Responsive Breakpoint */
+
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+
+	div {
+		margin-top: 15px;
+		width: 250px;
+		height: 250px;
+	}
+
+	h1.dont-think {
+		font-size: 15px;
+		padding: 3px 12px;
+	}
+
+	h3, a, p {
+		padding: 3px 12px;
+		font-size: 12px;
+	}
+
+	div h1 {
+		font-size: 25px;
+	}
+
+	div:nth-child(1) h1 {
+		transform: translate(-25%, 0);
+	}	
+}
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+
+	div {
+		margin-top: 10px;
+		width: 150px;
+		height: 150px;
+	}
+
+	h1.dont-think {
+		font-size: 12px;
+		padding: 3px 10px;
+	}
+
+	h3, a, p {
+		padding: 3px 10px;
+		font-size: 10px;
+	}
+
+	div h1 {
+		font-size: 15px;
+		top: 45%;
+		right: 0;
+		transform: translate(30%, 0);
+	}
+
+	div:nth-child(1) h1, div:nth-child(3) h1 {
+		transform: translate(-50%, 55%);
+	}	
+}
